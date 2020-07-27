@@ -12,6 +12,9 @@ language:
 
 The Maps SDK allows you to query map layers and return a list of [GeoJSON `Feature`s](/android/java/overview/geojson/#feature-and-featurecollection) that include information about the `Feature`'s geometry and properties. For example, a user can query map features by tapping the map and return any POIs that exist at that point as a GeoJSON `Feature`. Then, you can access the properties in the feature, including the POI's name as a `String`. Querying the map won't always return the information that you are looking for. It is possible to receive a `List<Feature>` with 0 features in it.
 
+Maps SDK 为您提供查询地图层的工具以获取 GeoJSON `要素`的列表，这些`要素`保存着用于渲染地图的位置和属性信息。一个示例用法就是用来查询用户单击或点击地图的位置，并确定用户是否选择地图上显示的 POI。随后您可以通过提供的 GeoJSON 要素获取属性信息，包括以`String`格式保存的 POI 名称。需要注意的是，考虑查询地图并不总是返回您要查找的信息。因此, 可能收到具有 0 个要素列表。
+
+
 ## How querying works
 
 You can query the map for features that exist at a `Point` or within a `BoundingBox`. Aside from layers, it is also possible to query the source for specific information matching your query regardless if the items are being displayed on the map.
